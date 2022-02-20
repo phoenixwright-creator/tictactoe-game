@@ -6,6 +6,11 @@ const player2 = new Player(2, 'André');
 const emptyBoard = [['','',''], ['','',''], ['','','']];
 let symbolTurn = 'X';
 
+let scoreP1 = 0;
+let scoreP2 = 0;
+
+
+
 function changeName(event){
     const newName = prompt('Please enter your name : ');
     switch(event.target.id){
@@ -163,3 +168,15 @@ const buttonChangeName = document.querySelectorAll('.changeName');
 for(let i=0; i<buttonChangeName.length; i++){
     buttonChangeName[i].addEventListener('click', changeName);
 }
+
+function restart(){
+    alert(event);
+    emptyBoard = [['','',''], ['','',''], ['','','']];
+    symbolTurn = 'X';
+    drawBoard();
+    play();
+}
+
+const restartButton = document.querySelector('.restartBtn');
+restartButton.addEventListener('click', restart);
+
