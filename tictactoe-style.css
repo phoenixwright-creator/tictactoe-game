@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -355,7 +357,10 @@ template {
     grid-template-rows: 1fr 1fr 6fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    background-color: bisque;
+    background-color: white;
+    color:rgb(210, 42, 30);
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
 
 .main-title {
@@ -371,6 +376,7 @@ template {
     row-gap: 20px;
     justify-content: center;
     align-items: center;
+    color: #000000;
 }
 
 .player-2 {
@@ -382,6 +388,8 @@ template {
     row-gap: 20px;
     justify-content: center;
     align-items: center;
+    color: #000000;
+
 }
 
 .player-name{
@@ -399,7 +407,8 @@ template {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: coral;
+    background-color: rgb(231, 78, 67);
+    color: white;
 }
 
 .cell {
@@ -423,10 +432,19 @@ template {
   column-gap: 20px;
   align-items: center;
   font-size: 1.3rem;
-  text-align: center;
   padding-bottom: 10px;
+  color: #000000;
 }
 
 .score {
   font-size: 1.4rem;
+}
+
+.container button {
+  background-color: white;
+  color: rgb(210, 42, 30);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 0px 1px 3px 0px #000000;
 }

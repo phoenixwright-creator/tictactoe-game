@@ -175,6 +175,10 @@ function restart(){
     symbolTurn = 'X';
     scoreP1 = 0;
     scoreP2 = 0;
+    const score1 = document.querySelector('#scoreP1');
+    const score2 = document.querySelector('#scoreP2');
+    score1.innerHTML = `Score : ${scoreP1}`;
+    score2.innerHTML = `Score : ${scoreP2}`;
     const winner = document.querySelector('.winner');
     winner.style.display = 'none';
     drawBoard();
