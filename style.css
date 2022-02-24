@@ -352,7 +352,7 @@ template {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr 6fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     background-color: bisque;
@@ -365,7 +365,7 @@ template {
 
 .player-1 {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -375,7 +375,7 @@ template {
 
 .player-2 {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
     row-gap: 20px;
     display: flex;
     flex-direction: column;
@@ -391,9 +391,9 @@ template {
 
 .gameboard {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
     align-self: center;
-    border: 1px solid black;
+    box-shadow: 0px 0px 5px 2px rgb(0,0,0,1);
     height: 60vh;
     width: 60vh;
     display: grid;
@@ -412,5 +412,21 @@ template {
 
 .restart {
   grid-column: 1/4;
-  grid-row: 3/4;
+  grid-row: 4/5;
+  padding-top: 10px;
+}
+
+.winner {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: none;
+  column-gap: 20px;
+  align-items: center;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.score {
+  font-size: 1.4rem;
 }
