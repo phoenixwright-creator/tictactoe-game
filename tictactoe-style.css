@@ -402,8 +402,8 @@ template {
     grid-row: 3/4;
     align-self: center;
     box-shadow: 0px 0px 5px 2px rgb(0,0,0,1);
-    height: 60vh;
-    width: 60vh;
+    height: 50vh;
+    width: 50vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
